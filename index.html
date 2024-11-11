@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Thuật Quản Lý Bộ Nhớ Ảo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Quản Lý Bộ Nhớ Ảo</h1>
+            <p>Minh họa các giải thuật FIFO, OPT và LRU</p>
+        </header>
+
+        <div class="controls">
+            <label for="algorithm">Chọn Giải Thuật:</label>
+            <select id="algorithm">
+                <option value="fifo">FIFO</option>
+                <option value="opt">OPT (Optimal)</option>
+                <option value="lru">LRU (Least Recently Used)</option>
+            </select>
+
+            <label for="frameCount">Số Khung Bộ Nhớ:</label>
+            <input type="number" id="frameCount" min="1" max="6" value="3">
+
+            <label for="pages">Nhập Các Trang (cách nhau bằng dấu phẩy):</label>
+            <input type="text" id="pages" placeholder="Ví dụ: 1, 2, 3, 4, 1, 3">
+
+            <button id="run">Chạy Mô Phỏng</button>
+        </div>
+
+        <div class="output">
+            <h2>Kết Quả Mô Phỏng:</h2>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
